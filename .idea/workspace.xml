@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7ada2ec7-15c5-4101-8b86-f991b65735b1" name="更改" comment="chore(build): 初始化项目结构和配置Gradle元配置插件&#10;&#10;- 添加测试项目及示例项目基础配置文件，包括.gradle、.idea和.gitignore&#10;- 配置Gradle Wrapper及其属性，确保构建环境一致性&#10;- 初始化Kotlin及Java工具链配置，指定JVM版本为21&#10;- 引入build.yml作为核心配置文件，定义项目依赖和仓库&#10;- 实现Gradle元配置插件build.gradle.kts，支持插件发布与依赖管理&#10;- 设置插件发布到本地Maven仓库及插件描述信息&#10;- 添加多个文档文件，详细说明插件设计理念与使用指南&#10;- 提供Gradle启动脚本和Windows批处理脚本，确保跨平台运行能力&#10;- 配置测试任务使用JUnit平台，完善开发测试流程" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+      <option value="repository" />
+    </option>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/d2GradleSample">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/test">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/test">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="test" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="test" type="f1a62948:ProjectNode" />
+                <item name="d2GradleSample" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="test" type="f1a62948:ProjectNode" />
+                <item name="d2GradleSample" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="test" type="f1a62948:ProjectNode" />
+                <item name="d2GradleSample" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$/test" gradleHome="C:\Users\EDY\.gradle\wrapper\dists\gradle-8.14-bin\38aieal9i53h9rfe7vjup95b9\gradle-8.14" javaHome="C:\Users\EDY\.jdks\ms-21.0.8" gradleVersion="8.14" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="360Nzmhgh3dY8igwZ3hl6D5SxyE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.test [build].executor": "Debug",
+    "Gradle.test [clean].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/others/MetaConfigPlugin",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/others/pluginDemo/src/main/java/com/d2rabbit/Main.java",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Gradle.test [clean]">
+    <configuration name="test [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/test" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="test [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/test" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.test [clean]" />
+        <item itemvalue="Gradle.test [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="7ada2ec7-15c5-4101-8b86-f991b65735b1" name="更改" comment="" />
+      <created>1764139795661</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764139795661</updated>
+      <workItem from="1764139797010" duration="11414000" />
+      <workItem from="1764209008301" duration="5925000" />
+      <workItem from="1764223384851" duration="181000" />
+    </task>
+    <task id="LOCAL-00001" summary="chore(build): 初始化项目结构和配置Gradle元配置插件&#10;&#10;- 添加测试项目及示例项目基础配置文件，包括.gradle、.idea和.gitignore&#10;- 配置Gradle Wrapper及其属性，确保构建环境一致性&#10;- 初始化Kotlin及Java工具链配置，指定JVM版本为21&#10;- 引入build.yml作为核心配置文件，定义项目依赖和仓库&#10;- 实现Gradle元配置插件build.gradle.kts，支持插件发布与依赖管理&#10;- 设置插件发布到本地Maven仓库及插件描述信息&#10;- 添加多个文档文件，详细说明插件设计理念与使用指南&#10;- 提供Gradle启动脚本和Windows批处理脚本，确保跨平台运行能力&#10;- 配置测试任务使用JUnit平台，完善开发测试流程">
+      <option name="closed" value="true" />
+      <created>1764223457924</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764223457924</updated>
+    </task>
+    <task id="LOCAL-00002" summary="chore(build): 初始化项目结构和配置Gradle元配置插件&#10;&#10;- 添加测试项目及示例项目基础配置文件，包括.gradle、.idea和.gitignore&#10;- 配置Gradle Wrapper及其属性，确保构建环境一致性&#10;- 初始化Kotlin及Java工具链配置，指定JVM版本为21&#10;- 引入build.yml作为核心配置文件，定义项目依赖和仓库&#10;- 实现Gradle元配置插件build.gradle.kts，支持插件发布与依赖管理&#10;- 设置插件发布到本地Maven仓库及插件描述信息&#10;- 添加多个文档文件，详细说明插件设计理念与使用指南&#10;- 提供Gradle启动脚本和Windows批处理脚本，确保跨平台运行能力&#10;- 配置测试任务使用JUnit平台，完善开发测试流程">
+      <option name="closed" value="true" />
+      <created>1764223527418</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764223527418</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/d2GradleSample" />
+      <path value="$PROJECT_DIR$/test" />
+    </ignored-roots>
+    <MESSAGE value="chore(build): 初始化项目结构和配置Gradle元配置插件&#10;&#10;- 添加测试项目及示例项目基础配置文件，包括.gradle、.idea和.gitignore&#10;- 配置Gradle Wrapper及其属性，确保构建环境一致性&#10;- 初始化Kotlin及Java工具链配置，指定JVM版本为21&#10;- 引入build.yml作为核心配置文件，定义项目依赖和仓库&#10;- 实现Gradle元配置插件build.gradle.kts，支持插件发布与依赖管理&#10;- 设置插件发布到本地Maven仓库及插件描述信息&#10;- 添加多个文档文件，详细说明插件设计理念与使用指南&#10;- 提供Gradle启动脚本和Windows批处理脚本，确保跨平台运行能力&#10;- 配置测试任务使用JUnit平台，完善开发测试流程" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(build): 初始化项目结构和配置Gradle元配置插件&#10;&#10;- 添加测试项目及示例项目基础配置文件，包括.gradle、.idea和.gitignore&#10;- 配置Gradle Wrapper及其属性，确保构建环境一致性&#10;- 初始化Kotlin及Java工具链配置，指定JVM版本为21&#10;- 引入build.yml作为核心配置文件，定义项目依赖和仓库&#10;- 实现Gradle元配置插件build.gradle.kts，支持插件发布与依赖管理&#10;- 设置插件发布到本地Maven仓库及插件描述信息&#10;- 添加多个文档文件，详细说明插件设计理念与使用指南&#10;- 提供Gradle启动脚本和Windows批处理脚本，确保跨平台运行能力&#10;- 配置测试任务使用JUnit平台，完善开发测试流程" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/d2rabbit/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
