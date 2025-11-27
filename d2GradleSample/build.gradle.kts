@@ -21,14 +21,14 @@ dependencies {
 
 // 配置Gradle插件发布
 gradlePlugin {
-    website = "https://github.com/d2rabbit/gradle-meta-config-plugin"
-    vcsUrl = "https://github.com/d2rabbit/gradle-meta-config-plugin.git"
+    website = "https://github.com/asdshuaishuai/metaConfigPlugin"
+    vcsUrl = "https://github.com/asdshuaishuai/metaConfigPlugin.git"
     
     plugins {
         create("metaConfigPlugin") {
             id = "com.d2rabbit.meta-config"
             displayName = "Meta Config Plugin"
-            description = "通过build.yml文件管理Gradle项目配置的插件"
+            description = "A Gradle plugin that enhances build.gradle.kts by moving dependencies, basic project information, and repository configurations into a build.yml file."
             tags = listOf("yaml", "configuration", "dependencies", "repositories", "meta-config")
             implementationClass = "com.d2rabbit.gradle.MetaConfigPlugin"
         }
@@ -44,28 +44,28 @@ publishing {
             // 配置POM信息
             pom {
                 name.set("Meta Config Plugin")
-                description.set("通过build.yml文件管理Gradle项目配置的插件")
-                url.set("https://github.com/d2rabbit/gradle-meta-config-plugin")
+                description.set("A Gradle plugin that enhances build.gradle.kts by moving dependencies, basic project information, and repository configurations into a build.yml file.")
+                url.set("https://github.com/asdshuaishuai/metaConfigPlugin")
                 
                 licenses {
                     license {
-                        name.set("The Apache License, Version 2.0")
-                        url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+                        name.set("MIT License")
+                        url.set("https://opensource.org/licenses/MIT")
                     }
                 }
                 
                 developers {
                     developer {
-                        id.set("d2rabbit")
-                        name.set("D2 Rabbit")
-                        email.set("d2rabbit@example.com")
+                        id.set("kelthas")
+                        name.set("kelthas huo")
+                        email.set("asdshuaishuai@outlook.com")
                     }
                 }
                 
                 scm {
-                    connection.set("scm:git:git://github.com/d2rabbit/gradle-meta-config-plugin.git")
-                    developerConnection.set("scm:git:ssh://github.com:d2rabbit/gradle-meta-config-plugin.git")
-                    url.set("https://github.com/d2rabbit/gradle-meta-config-plugin/tree/main")
+                    connection.set("scm:git:git://github.com:asdshuaishuai/metaConfigPlugin.git")
+                    developerConnection.set("scm:git:ssh://github.com:asdshuaishuai/metaConfigPlugin.git")
+                    url.set("https://github.com/asdshuaishuai/metaConfigPlugin/tree/master")
                 }
             }
         }
