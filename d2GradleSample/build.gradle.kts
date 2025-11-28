@@ -5,7 +5,7 @@ plugins {
     id("com.gradle.plugin-publish") version "1.2.1"
 }
 
-group = "com.d2rabbit"
+group = "io.github.asdshuaishuai"
 version = "1.0.0"
 
 repositories {
@@ -21,16 +21,16 @@ dependencies {
 
 // 配置Gradle插件发布
 gradlePlugin {
-    website = "https://github.com/asdshuaishuai/metaConfigPlugin"
+    website = "https://github.com/asdshuaishuai/metaConfigPlugin/blob/master/README_en.md"
     vcsUrl = "https://github.com/asdshuaishuai/metaConfigPlugin.git"
     
     plugins {
         create("metaConfigPlugin") {
-            id = "com.d2rabbit.meta-config"
+            id = "io.github.asdshuaishuai.meta-config"
             displayName = "Meta Config Plugin"
             description = "A Gradle plugin that enhances build.gradle.kts by moving dependencies, basic project information, and repository configurations into a build.yml file."
             tags = listOf("yaml", "configuration", "dependencies", "repositories", "meta-config")
-            implementationClass = "com.d2rabbit.gradle.MetaConfigPlugin"
+            implementationClass = "io.github.asdshuaishuai.gradle.MetaConfigPlugin"
         }
     }
 }
