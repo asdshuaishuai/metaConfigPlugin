@@ -1,7 +1,8 @@
-package com.d2rabbit.gradle
+package io.github.asdshuaishuai.gradle
 
-import com.d2rabbit.gradle.config.ConfigService
-import com.d2rabbit.gradle.service.ProjectConfigurator
+import io.github.asdshuaishuai.gradle.config.BuildConfig
+import io.github.asdshuaishuai.gradle.config.ConfigService
+import io.github.asdshuaishuai.gradle.service.ProjectConfigurator
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.initialization.Settings
@@ -12,7 +13,7 @@ import org.gradle.api.initialization.Settings
  * This plugin allows managing project plugins, repositories, dependencies, etc. 
  * through build.yml file, simplifying the complexity of build.gradle.kts.
  * 
- * Plugin ID: com.d2rabbit.meta-config
+ * Plugin ID: io.github.asdshuaishuai.meta-config
  */
 class MetaConfigPlugin : Plugin<Settings> {
     

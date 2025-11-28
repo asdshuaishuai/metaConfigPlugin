@@ -10,6 +10,6 @@ pluginManagement {
 
 plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
-    id("com.d2rabbit.meta-config")
+    id("io.github.asdshuaishuai.meta-config")
 }
 rootProject.name = "test"

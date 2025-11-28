@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ada2ec7-15c5-4101-8b86-f991b65735b1" name="更改" comment="chore(build): 初始化项目结构和配置Gradle元配置插件&#10;&#10;- 添加测试项目及示例项目基础配置文件，包括.gradle、.idea和.gitignore&#10;- 配置Gradle Wrapper及其属性，确保构建环境一致性&#10;- 初始化Kotlin及Java工具链配置，指定JVM版本为21&#10;- 引入build.yml作为核心配置文件，定义项目依赖和仓库&#10;- 实现Gradle元配置插件build.gradle.kts，支持插件发布与依赖管理&#10;- 设置插件发布到本地Maven仓库及插件描述信息&#10;- 添加多个文档文件，详细说明插件设计理念与使用指南&#10;- 提供Gradle启动脚本和Windows批处理脚本，确保跨平台运行能力&#10;- 配置测试任务使用JUnit平台，完善开发测试流程" />
+    <list default="true" id="7ada2ec7-15c5-4101-8b86-f991b65735b1" name="更改" comment="chore(plugin): 更新插件配置信息&#10;&#10;- 修改 group 为 io.github.asdshuaishuai&#10;- 更新插件 ID 为 io.github.asdshuaishuai.meta-config&#10;- 更新网站链接至 README_en.md&#10;- 更新实现类路径为 io.github.asdshuaishuai.gradle.MetaConfigPlugin">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d2GradleSample/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/d2GradleSample/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d2GradleSample/src/main/kotlin/com/d2rabbit/gradle/MetaConfigPlugin.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/d2GradleSample/src/main/kotlin/com/d2rabbit/gradle/config/BuildConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/d2GradleSample/src/main/kotlin/com/d2rabbit/gradle/config/ConfigService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/d2GradleSample/src/main/kotlin/com/d2rabbit/gradle/config/YamlParser.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/d2GradleSample/src/main/kotlin/com/d2rabbit/gradle/service/FileChangeDetector.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/d2GradleSample/src/main/kotlin/com/d2rabbit/gradle/service/ProjectConfigurator.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/d2GradleSample/src/main/resources/META-INF/gradle-plugins/com.d2rabbit.meta-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/d2GradleSample/src/main/resources/META-INF/gradle-plugins/com.d2rabbit.meta-config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/test/settings.gradle.kts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,6 +71,13 @@
                 <item name="test" type="f1a62948:ProjectNode" />
                 <item name="d2GradleSample" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="plugin portal" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="test" type="f1a62948:ProjectNode" />
+                <item name="d2GradleSample" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="publishing" type="c8890929:TasksNode$1" />
               </path>
             </expand>
@@ -76,7 +94,7 @@
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="true" />
   </component>
-  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$/test" gradleHome="C:\Users\EDY\.gradle\wrapper\dists\gradle-8.14-bin\38aieal9i53h9rfe7vjup95b9\gradle-8.14" javaHome="C:\Users\EDY\.jdks\ms-21.0.8" gradleVersion="8.14" />
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$/test" gradleHome="D:\repo8\wrapper\dists\gradle-8.14-bin\38aieal9i53h9rfe7vjup95b9\gradle-8.14" javaHome="C:\Users\EDY\.jdks\ms-21.0.8" gradleVersion="8.14" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -87,8 +105,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.test [:d2GradleSample:publishPlugins].executor": "Run",
+    "Gradle.test [:d2GradleSample:publishToMavenLocal].executor": "Run",
+    "Gradle.test [:d2GradleSample:publish].executor": "Run",
     "Gradle.test [build].executor": "Debug",
     "Gradle.test [clean].executor": "Run",
+    "Gradle.test [publishPlugins].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -110,8 +132,18 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.test [clean]">
-    <configuration name="test [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\others\MetaConfigPlugin" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle publishPlugins" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.test [:d2GradleSample:publishPlugins]">
+    <configuration name="test [:d2GradleSample:publishPlugins]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/test" />
@@ -122,7 +154,51 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value=":d2GradleSample:publishPlugins" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="test [:d2GradleSample:publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/test" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":d2GradleSample:publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="test [:d2GradleSample:publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/test" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":d2GradleSample:publish" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -155,10 +231,35 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="test [publishPlugins]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/test" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishPlugins" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.test [:d2GradleSample:publishPlugins]" />
+        <item itemvalue="Gradle.test [:d2GradleSample:publishToMavenLocal]" />
+        <item itemvalue="Gradle.test [publishPlugins]" />
+        <item itemvalue="Gradle.test [:d2GradleSample:publish]" />
         <item itemvalue="Gradle.test [clean]" />
-        <item itemvalue="Gradle.test [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +280,8 @@
       <updated>1764139795661</updated>
       <workItem from="1764139797010" duration="11414000" />
       <workItem from="1764209008301" duration="5925000" />
-      <workItem from="1764223384851" duration="181000" />
+      <workItem from="1764223384851" duration="2194000" />
+      <workItem from="1764307842721" duration="941000" />
     </task>
     <task id="LOCAL-00001" summary="chore(build): 初始化项目结构和配置Gradle元配置插件&#10;&#10;- 添加测试项目及示例项目基础配置文件，包括.gradle、.idea和.gitignore&#10;- 配置Gradle Wrapper及其属性，确保构建环境一致性&#10;- 初始化Kotlin及Java工具链配置，指定JVM版本为21&#10;- 引入build.yml作为核心配置文件，定义项目依赖和仓库&#10;- 实现Gradle元配置插件build.gradle.kts，支持插件发布与依赖管理&#10;- 设置插件发布到本地Maven仓库及插件描述信息&#10;- 添加多个文档文件，详细说明插件设计理念与使用指南&#10;- 提供Gradle启动脚本和Windows批处理脚本，确保跨平台运行能力&#10;- 配置测试任务使用JUnit平台，完善开发测试流程">
       <option name="closed" value="true" />
@@ -197,7 +299,39 @@
       <option name="project" value="LOCAL" />
       <updated>1764223527418</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chore(build): 初始化项目结构和配置Gradle元配置插件&#10;&#10;- 添加测试项目及示例项目基础配置文件，包括.gradle、.idea和.gitignore&#10;- 配置Gradle Wrapper及其属性，确保构建环境一致性&#10;- 初始化Kotlin及Java工具链配置，指定JVM版本为21&#10;- 引入build.yml作为核心配置文件，定义项目依赖和仓库&#10;- 实现Gradle元配置插件build.gradle.kts，支持插件发布与依赖管理&#10;- 设置插件发布到本地Maven仓库及插件描述信息&#10;- 添加多个文档文件，详细说明插件设计理念与使用指南&#10;- 提供Gradle启动脚本和Windows批处理脚本，确保跨平台运行能力&#10;- 配置测试任务使用JUnit平台，完善开发测试流程">
+      <option name="closed" value="true" />
+      <created>1764223611575</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764223611575</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chore(build): 初始化项目结构和配置Gradle元配置插件&#10;&#10;- 添加测试项目及示例项目基础配置文件，包括.gradle、.idea和.gitignore&#10;- 配置Gradle Wrapper及其属性，确保构建环境一致性&#10;- 初始化Kotlin及Java工具链配置，指定JVM版本为21&#10;- 引入build.yml作为核心配置文件，定义项目依赖和仓库&#10;- 实现Gradle元配置插件build.gradle.kts，支持插件发布与依赖管理&#10;- 设置插件发布到本地Maven仓库及插件描述信息&#10;- 添加多个文档文件，详细说明插件设计理念与使用指南&#10;- 提供Gradle启动脚本和Windows批处理脚本，确保跨平台运行能力&#10;- 配置测试任务使用JUnit平台，完善开发测试流程">
+      <option name="closed" value="true" />
+      <created>1764223707341</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764223707341</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore(plugin): 更新插件发布信息及添加MIT许可证和英文说明文档&#10;&#10;- 修改Gradle插件发布的官网和版本库地址为新的GitHub仓库&#10;- 更新插件描述和POM中的相关信息，突出build.yml配置优势&#10;- 将许可证改为MIT License，添加完整MIT许可证文件&#10;- 修改开发者信息为kelthas及其联系方式&#10;- 更新SCM相关链接为新的项目地址&#10;- 新增完整的英文README.md，详细描述插件功能和使用方法&#10;- README包含项目结构、快速开始、配置参考、构建测试与架构设计说明&#10;- 提供文件变更检测与错误处理功能介绍，规划未来功能扩展&#10;- 添加项目贡献指南和联系方式">
+      <option name="closed" value="true" />
+      <created>1764224853013</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764224853013</updated>
+    </task>
+    <task id="LOCAL-00006" summary="chore(plugin): 更新插件配置信息&#10;&#10;- 修改 group 为 io.github.asdshuaishuai&#10;- 更新插件 ID 为 io.github.asdshuaishuai.meta-config&#10;- 更新网站链接至 README_en.md&#10;- 更新实现类路径为 io.github.asdshuaishuai.gradle.MetaConfigPlugin">
+      <option name="closed" value="true" />
+      <created>1764308227933</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764308227933</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +354,9 @@
       <path value="$PROJECT_DIR$/test" />
     </ignored-roots>
     <MESSAGE value="chore(build): 初始化项目结构和配置Gradle元配置插件&#10;&#10;- 添加测试项目及示例项目基础配置文件，包括.gradle、.idea和.gitignore&#10;- 配置Gradle Wrapper及其属性，确保构建环境一致性&#10;- 初始化Kotlin及Java工具链配置，指定JVM版本为21&#10;- 引入build.yml作为核心配置文件，定义项目依赖和仓库&#10;- 实现Gradle元配置插件build.gradle.kts，支持插件发布与依赖管理&#10;- 设置插件发布到本地Maven仓库及插件描述信息&#10;- 添加多个文档文件，详细说明插件设计理念与使用指南&#10;- 提供Gradle启动脚本和Windows批处理脚本，确保跨平台运行能力&#10;- 配置测试任务使用JUnit平台，完善开发测试流程" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(build): 初始化项目结构和配置Gradle元配置插件&#10;&#10;- 添加测试项目及示例项目基础配置文件，包括.gradle、.idea和.gitignore&#10;- 配置Gradle Wrapper及其属性，确保构建环境一致性&#10;- 初始化Kotlin及Java工具链配置，指定JVM版本为21&#10;- 引入build.yml作为核心配置文件，定义项目依赖和仓库&#10;- 实现Gradle元配置插件build.gradle.kts，支持插件发布与依赖管理&#10;- 设置插件发布到本地Maven仓库及插件描述信息&#10;- 添加多个文档文件，详细说明插件设计理念与使用指南&#10;- 提供Gradle启动脚本和Windows批处理脚本，确保跨平台运行能力&#10;- 配置测试任务使用JUnit平台，完善开发测试流程" />
+    <MESSAGE value="chore(plugin): 更新插件发布信息及添加MIT许可证和英文说明文档&#10;&#10;- 修改Gradle插件发布的官网和版本库地址为新的GitHub仓库&#10;- 更新插件描述和POM中的相关信息，突出build.yml配置优势&#10;- 将许可证改为MIT License，添加完整MIT许可证文件&#10;- 修改开发者信息为kelthas及其联系方式&#10;- 更新SCM相关链接为新的项目地址&#10;- 新增完整的英文README.md，详细描述插件功能和使用方法&#10;- README包含项目结构、快速开始、配置参考、构建测试与架构设计说明&#10;- 提供文件变更检测与错误处理功能介绍，规划未来功能扩展&#10;- 添加项目贡献指南和联系方式" />
+    <MESSAGE value="chore(plugin): 更新插件配置信息&#10;&#10;- 修改 group 为 io.github.asdshuaishuai&#10;- 更新插件 ID 为 io.github.asdshuaishuai.meta-config&#10;- 更新网站链接至 README_en.md&#10;- 更新实现类路径为 io.github.asdshuaishuai.gradle.MetaConfigPlugin" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(plugin): 更新插件配置信息&#10;&#10;- 修改 group 为 io.github.asdshuaishuai&#10;- 更新插件 ID 为 io.github.asdshuaishuai.meta-config&#10;- 更新网站链接至 README_en.md&#10;- 更新实现类路径为 io.github.asdshuaishuai.gradle.MetaConfigPlugin" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

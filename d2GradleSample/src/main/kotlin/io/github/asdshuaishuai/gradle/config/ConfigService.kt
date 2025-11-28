@@ -1,4 +1,4 @@
-package com.d2rabbit.gradle.config
+package io.github.asdshuaishuai.gradle.config
 
 import org.gradle.api.Project
 import org.gradle.api.logging.Logger

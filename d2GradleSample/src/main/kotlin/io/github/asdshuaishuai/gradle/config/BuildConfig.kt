@@ -1,4 +1,4 @@
-package com.d2rabbit.gradle.config
+package io.github.asdshuaishuai.gradle.config
 
 /**
  * build.yml 文件的根配置结构

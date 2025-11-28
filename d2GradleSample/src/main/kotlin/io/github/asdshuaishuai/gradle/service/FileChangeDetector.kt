@@ -1,4 +1,4 @@
-package com.d2rabbit.gradle.service
+package io.github.asdshuaishuai.gradle.service
 
 import java.io.File
 import java.util.concurrent.ConcurrentHashMap

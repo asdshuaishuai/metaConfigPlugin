@@ -1,4 +1,4 @@
-package com.d2rabbit.gradle.config
+package io.github.asdshuaishuai.gradle.config
 
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.ObjectMapper

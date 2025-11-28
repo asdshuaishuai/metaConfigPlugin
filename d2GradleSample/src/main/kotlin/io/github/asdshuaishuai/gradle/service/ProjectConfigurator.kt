@@ -1,10 +1,21 @@
-package com.d2rabbit.gradle.service
+package io.github.asdshuaishuai.gradle.service
 
-import com.d2rabbit.gradle.config.*
+import io.github.asdshuaishuai.gradle.config.BuildConfig
+import io.github.asdshuaishuai.gradle.config.CopyTaskConfig
+import io.github.asdshuaishuai.gradle.config.DeleteTaskConfig
+import io.github.asdshuaishuai.gradle.config.ExecTaskConfig
+import io.github.asdshuaishuai.gradle.config.GenericTaskConfig
+import io.github.asdshuaishuai.gradle.config.JavaExecTaskConfig
+import io.github.asdshuaishuai.gradle.config.SyncTaskConfig
 import org.gradle.api.Project
 import org.gradle.api.artifacts.dsl.DependencyHandler
 import org.gradle.api.logging.Logger
-import org.gradle.api.plugins.JavaPlugin
+import org.gradle.api.tasks.Copy
+import org.gradle.api.tasks.Delete
+import org.gradle.api.tasks.Exec
+import org.gradle.api.tasks.JavaExec
+import org.gradle.api.tasks.Sync
+import java.net.URI
 
 /**
  * 项目配置器
@@ -84,7 +95,7 @@ class ProjectConfigurator(private val logger: Logger) {
                                 // 自定义Maven仓库
                                 project.repositories.maven {
                                     it.name = repository
-                                    it.url = java.net.URI(repository)
+                                    it.url = URI(repository)
                                 }
                                 logger.debug("应用自定义仓库: $repository")
                             } else {
@@ -184,7 +195,7 @@ class ProjectConfigurator(private val logger: Logger) {
      * 创建Copy任务
      */
     private fun createCopyTask(project: Project, taskName: String, config: CopyTaskConfig) {
-        project.tasks.register(taskName, org.gradle.api.tasks.Copy::class.java) { task ->
+        project.tasks.register(taskName, Copy::class.java) { task ->
             config.description?.let { task.description = it }
             config.group?.let { task.group = it }
             config.dependsOn?.let { task.dependsOn(it) }
@@ -208,7 +219,7 @@ class ProjectConfigurator(private val logger: Logger) {
      * 创建Exec任务
      */
     private fun createExecTask(project: Project, taskName: String, config: ExecTaskConfig) {
-        project.tasks.register(taskName, org.gradle.api.tasks.Exec::class.java) { task ->
+        project.tasks.register(taskName, Exec::class.java) { task ->
             config.description?.let { task.description = it }
             config.group?.let { task.group = it }
             config.dependsOn?.let { task.dependsOn(it) }
@@ -232,7 +243,7 @@ class ProjectConfigurator(private val logger: Logger) {
      * 创建JavaExec任务
      */
     private fun createJavaExecTask(project: Project, taskName: String, config: JavaExecTaskConfig) {
-        project.tasks.register(taskName, org.gradle.api.tasks.JavaExec::class.java) { task ->
+        project.tasks.register(taskName, JavaExec::class.java) { task ->
             config.description?.let { task.description = it }
             config.group?.let { task.group = it }
             config.dependsOn?.let { task.dependsOn(it) }
@@ -280,7 +291,7 @@ class ProjectConfigurator(private val logger: Logger) {
      * 创建Delete任务
      */
     private fun createDeleteTask(project: Project, taskName: String, config: DeleteTaskConfig) {
-        project.tasks.register(taskName, org.gradle.api.tasks.Delete::class.java) { task ->
+        project.tasks.register(taskName, Delete::class.java) { task ->
             config.description?.let { task.description = it }
             config.group?.let { task.group = it }
             config.dependsOn?.let { task.dependsOn(it) }
@@ -297,7 +308,7 @@ class ProjectConfigurator(private val logger: Logger) {
      * 创建Sync任务
      */
     private fun createSyncTask(project: Project, taskName: String, config: SyncTaskConfig) {
-        project.tasks.register(taskName, org.gradle.api.tasks.Sync::class.java) { task ->
+        project.tasks.register(taskName, Sync::class.java) { task ->
             config.description?.let { task.description = it }
             config.group?.let { task.group = it }
             config.dependsOn?.let { task.dependsOn(it) }
